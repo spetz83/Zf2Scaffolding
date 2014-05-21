@@ -1,4 +1,5 @@
-zf2-scaffolding
-===============
+Zf2Scaffolding
+==============
 
-ZendFramework 2 scaffolding package
+A ZendFramework 2 Scaffolding Module
+
