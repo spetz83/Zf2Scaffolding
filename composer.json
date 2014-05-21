@@ -1,0 +1,24 @@
+{
+    "name": "spetz83/zf2-scaffolding",
+    "license": "GPLv2",
+    "homepage": "https://github.com/spetz83/zf2-scaffolding",
+    "keywords": [
+        "zf2",
+        "zend"
+    ],
+    "authors": [
+        {
+            "name": "Tom Etzel",
+            "email": "thomas.etzel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Zf2Scaffolding\\": "src/"
+        }
+    }
+}
