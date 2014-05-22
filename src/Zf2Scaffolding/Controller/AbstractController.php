@@ -14,7 +14,7 @@ use Zend\Session\Container;
 
 /**
  * Class AbstractController
- * @package Zf2Scaffolding\Controller
+ * @package zf2scaffolding\Controller
  * @property Doctrine\ORM\EntityManager $em
  */
 class AbstractController extends AbstractActionController
