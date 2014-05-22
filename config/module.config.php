@@ -27,8 +27,8 @@ return array(
 
 
     'view_manager' => array(
-        'template_map' => array(
-            'Zf2Scaffolding/index' => __DIR__ . '/../view/zf2Scaffolding/index.phtml',
+        'template_path_stack' => array(
+            'zf2scaffolding' => __DIR__ . '/../view',
         ),
     ),
 
