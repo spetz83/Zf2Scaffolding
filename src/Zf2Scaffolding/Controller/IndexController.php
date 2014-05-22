@@ -10,7 +10,26 @@ class IndexController extends AbstractController
     {
         $em=$this->getEntityManager();
         $config = $this->_getConfig();
+        $zf2sConf = $config['zf2scaffolding'];
+        $entityPath = $zf2sConf['entityPath'];
 
-        return array('derp'=>'Working!');
+        $entities = array();
+        if(file_exists($entityPath))
+        {
+            $rawFiles = scandir($entityPath);
+            foreach($rawFiles as $file)
+            {
+                if(strpos($file,'.php') != false && strpos($file, 'Repository') == false)
+                {
+                    $entities[] = array('name'=>$file);
+                }
+            }
+        }
+        else
+        {
+            echo 'FAIL';die;
+        }
+
+        return array('entities'=>$entities);
     }
 }

@@ -1,0 +1,6 @@
+<?php
+return array(
+    'zf2scaffolding' => array(
+        'entityPath' => '<path to Doctrine2 Entities>',
+    );
+);
